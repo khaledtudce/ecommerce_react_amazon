@@ -1,5 +1,27 @@
 {
+  "name": "ecommerce_react_amazon",
+  "type": "module",
+  "description": "This is our Amazon Ecommerce website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "dependencies": {
-    "create-react-app": "^5.0.0"
-  }
+    "create-react-app": "^5.0.0",
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": " nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledtudce/ecommerce_react_amazon.git"
+  },
+  "author": "Khaled",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaledtudce/ecommerce_react_amazon/issues"
+  },
+  "homepage": "https://github.com/khaledtudce/ecommerce_react_amazon#readme"
 }
