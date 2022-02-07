@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import SigninScreen from './screens/SigninScreen';
 
 function App() {
 
@@ -20,11 +21,11 @@ function App() {
           </div>
           <div>
             <Link to="/cart">Cart
-            {
-              cartItems.length > 0 && (
-                <span className='badge'>{cartItems.length}</span>
-              )
-            }
+              {
+                cartItems.length > 0 && (
+                  <span className='badge'>{cartItems.length}</span>
+                )
+              }
             </Link>
             <Link to="/signin">Sign In</Link>
           </div>
@@ -32,6 +33,7 @@ function App() {
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} ></Route>
+          <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
 
         </main>
